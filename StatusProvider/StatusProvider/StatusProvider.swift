@@ -164,7 +164,7 @@ extension UIView: StatusViewContainer {
             view.translatesAutoresizingMaskIntoConstraints = false
             NSLayoutConstraint.activate([
                 view.centerXAnchor.constraint(equalTo: centerXAnchor),
-                view.centerYAnchor.constraint(equalTo: centerYAnchor),
+                view.centerYAnchor.constraint(equalTo: centerYAnchor, constant: -40),
                 view.leadingAnchor.constraint(greaterThanOrEqualTo: readableContentGuide.leadingAnchor),
                 view.trailingAnchor.constraint(lessThanOrEqualTo: readableContentGuide.trailingAnchor),
                 view.topAnchor.constraint(greaterThanOrEqualTo: topAnchor),
